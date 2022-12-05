@@ -1,0 +1,249 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family= Titillium +Web & display=swap');
+
+@font-face {
+    font-family: 'FonteNova';
+    src: url("_fonts/bubblegum-sans-regular.otf");
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("fundocinza2.jpg");
+}
+
+
+
+div#interface {
+    width: 1000px;
+    background-color: white;
+    margin: -22px auto 0px auto; /*margem externa da interface*/
+    box-shadow: 0px 0px 10px black;
+    padding: 10px 10px 10px 10px; /*margem interna do conteudo*/
+}
+
+h1 {
+    color: rgb(29, 29, 165);
+}
+h2 {
+    text-align: center;
+    text-indent: 40px;
+}
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header#cabecalho img#icone {
+    position: absolute;
+    top:40px;
+    left: 950px;
+}
+
+header#cabecalho{
+    border-bottom: 1px #606060 solid;
+    height: 150px;
+    background: url("_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
+}
+
+header#cabecalho h1{
+    font-family: 'FonteNova', Helvetica, sans-serif;
+    padding: 0px;
+    margin-bottom: 0px;
+    color:#606060;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .6)
+}
+
+header#cabecalho h2{
+    font-family: 'Titillium Web', sans-serif;
+    padding: 0px; 
+    margin-top: 0px;
+     
+}
+
+section#principal {
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 15px; 
+}
+
+article#noticiaprincipal h2{
+    font-size: 13pt;
+    font-family: 'FonteNova', sans-serif;
+    color: #606060;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 1px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1 {
+    font-size: 20pt;
+    font-family: 'FonteNova', sans-serif;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+header#cabecalho-artigo h2 {
+    font-size: 12pt;
+    color: #cecece;
+    background-color: #fff;
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+header#cabecalho-artigo h3 {
+    font-size: 12pt;
+    color: #606060;
+    margin-bottom: 0px;
+}
+.direita {
+    text-align: right;
+}
+
+aside#lateral{
+    display: block;
+    width: 450px;
+    float: right;
+    background-color: #dddddd;
+    margin: 10px 10px 10px 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+    padding: 0px;
+}
+aside#lateral h1 {
+    font-size: 20pt;
+    font-family: 'FonteNova', sans-serif;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    
+}
+aside#lateral h2 {
+    font-size: 13pt;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #888888;
+    color: #fff;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+aside#lateral p {
+    text-align: justify;
+    text-indent: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer#rodape { 
+    clear: both;
+    border-top: 1px solid #606060;
+}
+footer#rodape p{
+    text-align: center;
+}
+
+/*
+Formatação de imagens com legendas
+*/
+figure.foto-legenda {
+    border: 6px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+figure.foto-legenda img {
+    width: 100%;
+    height: 100%;
+}
+figure.foto-legenda figcaption{
+    position: absolute;
+    top: 0px;
+}
+
+/*Tabela CSS*/
+table#tabelinha {
+    border: 1px solid #606060;
+    border-spacing: 0px; 
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
+table#tabelinha td {
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+table#tabelinha td.ce {
+    color: #fff;
+    background-color: #606060;
+    vertical-align: top;
+    
+}
+
+table#tabelinha td.cd {
+    background-color: cadetblue;
+}
+
+table#tabelinha caption{
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+} 
+
+table#tabelinha caption span {
+    display: block;
+    color: #000000;
+    font-size: 8pt;
+    float: right;
+    margin-top: 8px;
+}
+
+/* Formatação do Menu*/
+
+nav#menu {
+    display: block;
+}
+
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 400px;
+}
+
+nav#menu li {
+    display: inline-block;
+    background-color: rgb(236, 228, 228);
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover {
+    background-color: #606060;
+}
+
+nav#menu h1{
+    display: none;
+}
+
+nav#menu a {
+    color: #000000;
+    text-decoration: none;
+}
+
+nav#menu a:hover {
+    color: rgb(236, 228, 228);
+}
