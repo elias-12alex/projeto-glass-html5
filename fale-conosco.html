@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document Google Glass</title>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="../projeto-glass-html5/_css/form.css">
 </head>
 <script lang="javascript" src="funcoes.js"></script>
 
@@ -17,17 +18,17 @@
         <h2>A revolução do Google está chegando</h2>
     </hgroup>
     <figure>
-        <img id="icone" src ="glass-oculos-preto-peq.png"/> 
+        <img id="icone" src ="_imagens/contato.png"/> 
     </figure>
     <br/>
     <nav id="menu">    
     <h1>Menu Principal</h1>
     <ul type="circle">
-        <li onmouseover="mudaFoto('home.png')" onmouseout="mudaFoto('glass-oculos-preto-peq.png')"><a href="index.html" target="_blank">Home</a></li>
-        <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('glass-oculos-preto-peq.png')"><a href="specs.html">Especificações</a></li>
-        <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('glass-oculos-preto-peq.png')"><a href="fotos.html">Fotos</a></li>
-        <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('glass-oculos-preto-peq.png')"><a href="multimidia.html">Multimídia</a></li>
-        <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('glass-oculos-preto-peq.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+        <li onmouseover="mudaFoto('home.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html" target="_blank">Home</a></li>
+        <li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="specs.html">Especificações</a></li>
+        <li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
+        <li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="multimidia.html">Multimídia</a></li>
+        <li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
     </ul>
     </nav>
 
@@ -44,33 +45,44 @@
             </header> 
     </section>
 
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
+<form action="">
+    <fieldset id="usuario">
+    <legend>Identificação do Usuário</legend> 
+    <p><label for="cNome"> Nome:</label>  <input type="text" name="tNome" id="cNome" size="30" maxlength="35" placeholder="Nome Completo"></p> 
+    <p><label for="cEmail"> E-mail:</label>  <input type="email" name="tEmail" id="cEmail" size="20" maxlength="30" placeholder="Digite o Email"></p>
+    <P><label for="cSenha">Senha:</label> <input type="password" name="tSenha" id="cSenha" size="8" maxlength="8" placeholder="8 dígitos"></P>
 
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
-
-Mensagem do Usuário
-    Grau de Urgência:
-    Mensagem:
-
-Quero um Google Glass
+    <fieldset id="sexo">
+        <legend>Sexo:</legend> 
+        <input type="radio" name="tSexo" id="cMas"><label for="cMas">Masculino</label> <br>
+        <input type="radio" name="tSexo" id="cFem"><label for="cFem">Feminino</label>
+    </fieldset> 
+    <p>Data de Nascimento: <input type="date" name="tNasc" id="cNasc"></p>
+    </fieldset>
+    <br>
+    <fieldset id="endereço">
+    <legend>Endereço do Usuário</legend> 
+    <p>Logradouro: <input type="text" name="tRua" id="cRua" size="50" maxlength="80" placeholder="Rua, Av, Tv..."></p>
+    <p>Número: <input type="number" nome="tNum" id="cNum" min="0" max="99999"></p>
+    <p>Estado:</p>
+    <p>Cidade:</p>
+    </fieldset>
+    <fieldset id="mensagem">
+    <legend>Mensagem do Usuário</legend> 
+    <p>Grau de Urgência:</p>
+    <p>Mensagem:</p>
+    </fieldset>
+    <fieldset id="pedido">
+    <legend>Quero um Google Glass</legend>
     Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
-
-
-[BOTÃO ENVIAR]
+    <p>Cor: <input type="color" name="tCor" id="cCor"></p>
+    <p>Quantidade:</p>
+    <p>Preço Total: R$</p>
+    </fieldset>
+    <div id="botao">
+    <button>[Finalizar]</button>
+    </div>
+</form> 
 
 <footer id="rodape">
     <p> Copyright &copy; 2013 - by Gustavo Guanabara <br>
